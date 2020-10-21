@@ -1,1 +1,15 @@
-{"mode":"Text","textContent":"# ------------------------------------------\n# \n# \tProject:      VEXcode Project\n#\tAuthor:       VEX\n#\tCreated:\n#\tDescription:  VEXcode V5 Python Project\n# \n# ------------------------------------------\n\n# Library imports\nimport vex\nimport sys\n# Begin project code\nmotor_left = vex.Motor(vex.Ports.PORT2, vex.GearSetting.RATIO18_1, True)\nmotor_left.spin(vex.DirectionType.FWD, 100, vex.VelocityUnits.PCT)\n","textLanguage":"python","rconfig":[],"slot":0,"platform":"V5","sdkVersion":"","appVersion":"","fileFormat":"1.0.0","icon":""}
+# ------------------------------------------
+# 
+# 	Project:      VEXcode Project
+#	Author:       VEX
+#	Created:
+#	Description:  VEXcode V5 Python Project
+# 
+# ------------------------------------------
+
+# Library imports
+import vex
+# Begin project code
+brain = vex.Brain("VEX_V5")
+motor_left = vex.Motor(vex.Ports.PORT2, vex.GearSetting.RATIO18_1, True)
+motor_left.spin(vex.DirectionType.FWD, 100, vex.VelocityUnits.PCT)
