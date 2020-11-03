@@ -13,3 +13,19 @@ import vex
 brain = vex.Brain("VEX_V5")
 motor_left = vex.Motor(vex.Ports.PORT2, vex.GearSetting.RATIO18_1, True)
 motor_left.spin(vex.DirectionType.FWD, 100, vex.VelocityUnits.PCT)
+
+
+
+
+def inputrollers(direction, time):
+    motor_9.set_velocity(120, RPM)
+    motor_8.set_velocity(120, RPM)
+    motor_9.spin(direction)
+    motor_8.spin(direction)
+
+drivetrain.drive_for(FORWARD, 20, INCHES)
+#inputrollers(FORWARD,8)
+drivetrain.turn_for(RIGHT, 199, DEGREES)
+drivetrain.drive_for(FORWARD,20,INCHES)
+#inputrollers(REVERSE, 'h')
+
